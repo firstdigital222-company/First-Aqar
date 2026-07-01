@@ -1,48 +1,36 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
-// import Categories from '../pages/Categories';
-import Products from '../pages/Products';
-import NotFound from '../pages/NotFound';
-// import ProtectedRoute from '../components/ProtectedRoute';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Home      from '../pages/Home';
+import Services  from '../pages/Services';
+import Portfolio from '../pages/Portfolio';
+import About     from '../pages/About';
+import FAQ       from '../pages/FAQ';
+import Contact   from '../pages/Contact';
+import NotFound  from '../pages/NotFound';
+
+const Layout = ({ children }) => (
+  <>
+    <Navbar />
+    {children}
+    <Footer />
+  </>
+);
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/products" element={<Products />} />
-        {/* <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        /> */}
-        {/* <Route
-          path="/categories"
-          element={
-            <ProtectedRoute>
-              <Categories />
-            </ProtectedRoute>
-          }
-        /> */}
-        {/* <Route
-          path="/products"
-          element={
-            <ProtectedRoute>
-              <Products />
-            </ProtectedRoute>
-          }
-        /> */}
-        <Route path="/" element={<Navigate to="/login" replace />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/"          element={<Layout><Home /></Layout>} />
+        <Route path="/services"  element={<Layout><Services /></Layout>} />
+        <Route path="/portfolio" element={<Layout><Portfolio /></Layout>} />
+        <Route path="/about"     element={<Layout><About /></Layout>} />
+        <Route path="/faq"       element={<Layout><FAQ /></Layout>} />
+        <Route path="/contact"   element={<Layout><Contact /></Layout>} />
+        <Route path="*"          element={<Layout><NotFound /></Layout>} />
       </Routes>
     </BrowserRouter>
   );
 };
 
 export default AppRoutes;
-

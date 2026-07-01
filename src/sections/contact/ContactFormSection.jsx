@@ -1,0 +1,179 @@
+import React, { useState } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FiPhone, FiMail, FiMapPin, FiSend } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
+import useScrollReveal from '../../hooks/useScrollReveal';
+
+const ContactFormSection = () => {
+  const { t } = useTranslation();
+  const [formData, setFormData]   = useState({ name: '', phone: '', email: '', service: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading]     = useState(false);
+  const ref = useScrollReveal();
+
+  const handleChange = (e) => setFormData(p => ({ ...p, [e.target.name]: e.target.value }));
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+    }, 1500);
+  };
+
+  return (
+    <section className="section section-dark bg-grid pt-[120px]" ref={ref}>
+      <div className="glow-orb glow-orb-gold w-[500px] h-[500px] top-1/2 right-[-150px] -translate-y-1/2 opacity-15" />
+
+      <div className="container relative z-1">
+        {/* Header */}
+        <div className="section-header reveal">
+          <span className="section-badge">{t('contact.badge')}</span>
+          <h1 className="section-title">
+            {t('contact.title')}
+          </h1>
+          <p className="section-subtitle">
+            {t('contact.sub')}
+          </p>
+          <div className="section-divider" />
+        </div>
+
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-10">
+          {/* Form */}
+          <div className="reveal">
+            <div className="bg-white border border-primary/15 rounded-[24px] p-9 shadow-[0_4px_24px_rgba(0,0,0,0.07)]">
+              <h2 className="text-text-main font-extrabold text-[1.2rem] mb-7">
+                {t('contact.form_title')}
+              </h2>
+
+              {submitted ? (
+                <div className="text-center p-[40px_20px] animate-[fadeIn_0.5s_ease]">
+                  <div className="text-[3rem] mb-4">✅</div>
+                  <h3 className="text-text-main font-bold text-[1.1rem] mb-2">
+                    {t('contact.success')}
+                  </h3>
+                  <p className="text-text-muted">
+                    {t('contact.success_sub')}
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                  <div className="flex gap-4 flex-wrap">
+                    <div className="flex-1 min-w-[200px]">
+                      <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.name')}</label>
+                      <input name="name" value={formData.name} onChange={handleChange} required placeholder="John Doe" className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary" />
+                    </div>
+                    <div className="flex-1 min-w-[200px]">
+                      <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.phone')}</label>
+                      <input name="phone" value={formData.phone} onChange={handleChange} required placeholder="+20 1XX XXX XXXX" className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary" dir="ltr" />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.email')}</label>
+                    <input name="email" type="email" value={formData.email} onChange={handleChange} placeholder="example@email.com" className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary" dir="ltr" />
+                  </div>
+                  <div>
+                    <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.service')}</label>
+                    <select name="service" value={formData.service} onChange={handleChange} className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary appearance-none">
+                      <option value="">{t('contact.service_select')}</option>
+                      <option>{t('services.s1_title')}</option>
+                      <option>{t('services.s2_title')}</option>
+                      <option>{t('services.s3_title')}</option>
+                      <option>{t('services.s4_title')}</option>
+                      <option>Project Supervision</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.message')}</label>
+                    <textarea name="message" value={formData.message} onChange={handleChange} required placeholder="..." className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary min-h-[120px] resize-y" />
+                  </div>
+                  <button type="submit" disabled={loading} className="w-full p-3.75 bg-gradient-to-br from-primary-light to-primary-dark text-white border-none rounded-xl text-base font-bold cursor-pointer font-main transition-all duration-300 mt-1 hover:brightness-110">
+                    {loading ? (
+                      <span className="flex items-center gap-2 justify-center">
+                        <span className="animate-spin inline-block">⟳</span>
+                        {t('contact.sending')}
+                      </span>
+                    ) : (
+                      <span className="flex items-center gap-2 justify-center">
+                        <FiSend size={18} />
+                        {t('contact.submit')}
+                      </span>
+                    )}
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div className="reveal-left flex flex-col gap-5">
+
+            {/* Direct Contact */}
+            <div className="bg-white border border-primary/15 rounded-[20px] p-6 shadow-[0_2px_12px_rgba(0,0,0,0.05)]">
+              <h3 className="text-text-main font-bold mb-5 text-base">
+                {t('contact.direct')}
+              </h3>
+              {[
+                { icon: <FaWhatsapp size={22} color="#25D366" />, label: 'WhatsApp', value: '+20 123 456 7890', href: 'https://wa.me/201234567890', highlight: true },
+                { icon: <FiPhone size={20} color="var(--primary)" />, label: 'Phone', value: '+20 123 456 7890', href: 'tel:+201234567890' },
+                { icon: <FiMail size={20} color="var(--primary)" />, label: 'Email', value: 'info@firstaqar.com', href: 'mailto:info@firstaqar.com' },
+                { icon: <FiMapPin size={20} color="var(--primary)" />, label: 'Address', value: 'Cairo, Egypt', href: '#' },
+              ].map((item, i) => (
+                <a
+                  key={i}
+                  href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-4 p-3.5 rounded-xl border no-underline mb-2.5 transition-all duration-300 ${
+                    item.highlight ? 'bg-[#25D366]/8 border-[#25D366]/20' : 'bg-primary/4 border-primary/15'
+                  } hover:scale-[1.02]`}
+                >
+                  <div className="w-11 h-11 rounded-xl bg-primary/8 flex items-center justify-center flex-shrink-0">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div className="text-[0.78rem] text-text-dim mb-0.5">{item.label}</div>
+                    <div className="text-[0.9rem] font-semibold text-text-main">{item.value}</div>
+                  </div>
+                </a>
+              ))}
+            </div>
+
+            {/* Working Hours */}
+            <div className="bg-white border border-primary/15 rounded-[20px] p-6 shadow-[0_2px_12px_rgba(0,0,0,0.05)]">
+              <h3 className="text-text-main font-bold mb-4 text-base">
+                {t('contact.hours')}
+              </h3>
+              {[
+                { day: 'Saturday — Thursday', time: '9:00 AM — 9:00 PM' },
+                { day: 'Friday', time: '2:00 PM — 9:00 PM' },
+              ].map((h, i) => (
+                <div key={i} className={`flex justify-between items-center py-2.5 ${i === 0 ? 'border-b border-primary/15' : ''}`}>
+                  <span className="text-text-muted text-[0.88rem]">{h.day}</span>
+                  <span className="text-primary font-semibold text-[0.88rem]">{h.time}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* WhatsApp Quick */}
+            <a
+              href="https://wa.me/201234567890?text=Hello"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-[20px_24px] bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-[20px] text-white no-underline font-main shadow-[0_8px_30px_rgba(37,211,102,0.3)] transition-all duration-300 hover:scale-[1.02]"
+            >
+              <FaWhatsapp size={24} />
+              <div>
+                <div className="font-bold text-[0.95rem]">{t('contact.chat_now')}</div>
+                <div className="text-[0.78rem] opacity-85">{t('contact.chat_sub')}</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactFormSection;
