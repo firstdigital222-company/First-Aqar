@@ -7,9 +7,9 @@ import useScrollReveal from '../../hooks/useScrollReveal';
 
 const ContactFormSection = () => {
   const { t } = useTranslation();
-  const [formData, setFormData]   = useState({ name: '', phone: '', email: '', service: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', phone: '', email: '', service: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading]     = useState(false);
+  const [loading, setLoading] = useState(false);
   const ref = useScrollReveal();
 
   const handleChange = (e) => setFormData(p => ({ ...p, [e.target.name]: e.target.value }));
@@ -82,7 +82,7 @@ const ContactFormSection = () => {
                       <option>{t('services.s2_title')}</option>
                       <option>{t('services.s3_title')}</option>
                       <option>{t('services.s4_title')}</option>
-                      <option>Project Supervision</option>
+                      <option>{t('contact.service_s5')}</option>
                     </select>
                   </div>
                   <div>
@@ -116,19 +116,18 @@ const ContactFormSection = () => {
                 {t('contact.direct')}
               </h3>
               {[
-                { icon: <FaWhatsapp size={22} color="#25D366" />, label: 'WhatsApp', value: '+20 123 456 7890', href: 'https://wa.me/201234567890', highlight: true },
-                { icon: <FiPhone size={20} color="var(--primary)" />, label: 'Phone', value: '+20 123 456 7890', href: 'tel:+201234567890' },
-                { icon: <FiMail size={20} color="var(--primary)" />, label: 'Email', value: 'info@firstaqar.com', href: 'mailto:info@firstaqar.com' },
-                { icon: <FiMapPin size={20} color="var(--primary)" />, label: 'Address', value: 'Cairo, Egypt', href: '#' },
+                { icon: <FaWhatsapp size={22} color="#25D366" />, label: t('contact.label_whatsapp'), value: '+20 1095854066', href: 'https://wa.me/201095854066', highlight: true },
+                { icon: <FiPhone size={20} color="var(--primary)" />, label: t('contact.label_phone'), value: '+20 1095854066', href: 'tel:+201095854066' },
+                { icon: <FiMail size={20} color="var(--primary)" />, label: t('contact.label_email'), value: 'info@firstaqar.com', href: 'mailto:info@firstaqar.com' },
+                { icon: <FiMapPin size={20} color="var(--primary)" />, label: t('contact.label_address'), value: t('contact.address_value'), href: '#' },
               ].map((item, i) => (
                 <a
                   key={i}
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : undefined}
                   rel="noopener noreferrer"
-                  className={`flex items-center gap-4 p-3.5 rounded-xl border no-underline mb-2.5 transition-all duration-300 ${
-                    item.highlight ? 'bg-[#25D366]/8 border-[#25D366]/20' : 'bg-primary/4 border-primary/15'
-                  } hover:scale-[1.02]`}
+                  className={`flex items-center gap-4 p-3.5 rounded-xl border no-underline mb-2.5 transition-all duration-300 ${item.highlight ? 'bg-[#25D366]/8 border-[#25D366]/20' : 'bg-primary/4 border-primary/15'
+                    } hover:scale-[1.02]`}
                 >
                   <div className="w-11 h-11 rounded-xl bg-primary/8 flex items-center justify-center flex-shrink-0">
                     {item.icon}
@@ -147,8 +146,8 @@ const ContactFormSection = () => {
                 {t('contact.hours')}
               </h3>
               {[
-                { day: 'Saturday — Thursday', time: '9:00 AM — 9:00 PM' },
-                { day: 'Friday', time: '2:00 PM — 9:00 PM' },
+                { day: t('contact.hours_day1'), time: t('contact.hours_time1') },
+                { day: t('contact.hours_day2'), time: t('contact.hours_time2') },
               ].map((h, i) => (
                 <div key={i} className={`flex justify-between items-center py-2.5 ${i === 0 ? 'border-b border-primary/15' : ''}`}>
                   <span className="text-text-muted text-[0.88rem]">{h.day}</span>
@@ -165,7 +164,7 @@ const ContactFormSection = () => {
               className="relative flex items-center justify-center gap-3 p-[18px_28px] bg-gradient-to-br from-[#25D366] via-[#128C7E] to-[#075E54] rounded-[16px] text-white no-underline font-main overflow-hidden"
               initial={{ scale: 0.9, y: 20, opacity: 0 }}
               animate={{ scale: 1, y: 0, opacity: 1 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.03,
                 y: -2,
                 boxShadow: '0 20px 50px rgba(37,211,102,0.4)',
@@ -177,57 +176,57 @@ const ContactFormSection = () => {
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
                 animate={{ x: ['-100%', '100%'] }}
-                transition={{ 
-                  duration: 2.5, 
-                  repeat: Infinity, 
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
                   repeatDelay: 1,
                   ease: 'linear'
                 }}
               />
-              
+
               {/* Pulsing ring effect */}
               <motion.div
                 className="absolute inset-0 rounded-[16px] border-2 border-white/30"
-                animate={{ 
+                animate={{
                   scale: [1, 1.1, 1],
                   opacity: [0.5, 0, 0.5],
                 }}
-                transition={{ 
-                  duration: 2, 
+                transition={{
+                  duration: 2,
                   repeat: Infinity,
                   ease: 'easeInOut'
                 }}
               />
-              
+
               <div className="relative flex items-center gap-3">
                 <motion.div
-                  animate={{ 
+                  animate={{
                     rotate: [0, -15, 15, -15, 0],
                     scale: [1, 1.1, 1]
                   }}
-                  transition={{ 
-                    duration: 2, 
-                    repeat: Infinity, 
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
                     repeatDelay: 2.5,
                     ease: 'easeInOut'
                   }}
                 >
                   <FaWhatsapp size={26} />
                 </motion.div>
-                
+
                 <div className="flex flex-col">
-                  <motion.span 
+                  <motion.span
                     className="font-bold text-[1rem] leading-tight text-white"
                     whileHover={{ letterSpacing: '0.5px' }}
                     transition={{ duration: 0.2 }}
                   >
                     {t('contact.chat_now')}
                   </motion.span>
-                  <motion.span 
+                  <motion.span
                     className="text-[0.75rem] opacity-90 font-medium text-white"
                     animate={{ opacity: [0.9, 1, 0.9] }}
-                    transition={{ 
-                      duration: 2, 
+                    transition={{
+                      duration: 2,
                       repeat: Infinity,
                       ease: 'easeInOut'
                     }}

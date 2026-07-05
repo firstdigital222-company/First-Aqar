@@ -21,24 +21,24 @@ const resources = {
         titleGold1: 'لتحفة فنية',
         sub1: 'حلول متكاملة في التشطيبات والتصميمات الداخلية والخارجية بأعلى معايير الجودة',
         cta1: 'احجز استشارة مجانية',
-        
+
         badge2: '🏡 تصميم خارجي',
         title2: 'واجهتك',
         titleGold2: 'أول انطباع',
         sub2: 'نصمم واجهات مميزة ولاندسكيب احترافي يعكس فخامة وأصالة مشروعك',
         cta2: 'شاهد أعمالنا',
-        
+
         badge3: '🎨 تصميم 3D',
         title3: 'شوف مشروعك',
         titleGold3: 'قبل التنفيذ',
         sub3: 'تصميمات ثلاثية الأبعاد واقعية ومخططات دقيقة لتصوّر نتيجتك النهائية قبل البدء',
         cta3: 'تعرف على خدماتنا',
-        
+
         whatsapp: 'تواصل واتساب',
         s1_val: '500+', s1_lbl: 'مشروع منجز',
-        s2_val: '8+',   s2_lbl: 'سنوات خبرة',
-        s3_val: '98%',  s3_lbl: 'رضا العملاء',
-        s4_val: '50+',  s4_lbl: 'مصمم محترف',
+        s2_val: '8+', s2_lbl: 'سنوات خبرة',
+        s3_val: '98%', s3_lbl: 'رضا العملاء',
+        s4_val: '50+', s4_lbl: 'مصمم محترف',
         tagline: 'نصمّم… ننفّذ… ونحوّل المساحات لتحف فنية'
       },
       about_snippet: {
@@ -140,6 +140,7 @@ const resources = {
         email: 'البريد الإلكتروني',
         service: 'نوع الخدمة',
         service_select: 'اختر نوع الخدمة',
+        service_s5: 'الإشراف على المشروع',
         message: 'تفاصيل مشروعك *',
         submit: 'إرسال الاستفسار',
         sending: 'جارٍ الإرسال…',
@@ -147,6 +148,15 @@ const resources = {
         success_sub: 'سيتواصل معك فريقنا خلال 24 ساعة',
         direct: 'تواصل مباشر',
         hours: '⏰ أوقات العمل',
+        label_whatsapp: 'واتساب',
+        label_phone: 'هاتف',
+        label_email: 'بريد إلكتروني',
+        label_address: 'العنوان',
+        address_value: 'الشرقية العاشر من رمضان بجوار البنك الاهلي اعلي مكتب الإخوة للمحاماة',
+        hours_day1: 'السبت — الخميس',
+        hours_time1: '9:00 ص — 9:00 م',
+        hours_day2: 'الجمعة',
+        hours_time2: '2:00 م — 9:00 م',
         chat_now: 'تحدث معنا الآن',
         chat_sub: 'استجابة فورية على الواتساب'
       },
@@ -179,24 +189,24 @@ const resources = {
         titleGold1: 'Into a Masterpiece',
         sub1: 'Integrated solutions in finishing, interior and exterior designs with the highest quality standards',
         cta1: 'Book Free Consultation',
-        
+
         badge2: '🏡 Exterior Design',
         title2: 'Your Facade is',
         titleGold2: 'The First Impression',
         sub2: 'We design distinctive facades and professional landscaping reflecting luxury and authenticity',
         cta2: 'View Our Works',
-        
+
         badge3: '🎨 3D Rendering',
         title3: 'See Your Project',
         titleGold3: 'Before Execution',
         sub3: 'Realistic 3D designs and precise blueprints to visualize your final output before starting',
         cta3: 'Explore Services',
-        
+
         whatsapp: 'WhatsApp Us',
         s1_val: '500+', s1_lbl: 'Completed Projects',
-        s2_val: '8+',   s2_lbl: 'Years of Experience',
-        s3_val: '98%',  s3_lbl: 'Client Satisfaction',
-        s4_val: '50+',  s4_lbl: 'Professional Designers',
+        s2_val: '8+', s2_lbl: 'Years of Experience',
+        s3_val: '98%', s3_lbl: 'Client Satisfaction',
+        s4_val: '50+', s4_lbl: 'Professional Designers',
         tagline: 'We design… We execute… We turn spaces into masterpieces'
       },
       about_snippet: {
@@ -298,6 +308,7 @@ const resources = {
         email: 'Email Address',
         service: 'Service Type',
         service_select: 'Select Service Type',
+        service_s5: 'Project Supervision',
         message: 'Your Project Details *',
         submit: 'Send Inquiry',
         sending: 'Sending...',
@@ -305,6 +316,15 @@ const resources = {
         success_sub: 'Our team will contact you within 24 hours',
         direct: 'Direct Contact',
         hours: '⏰ Working Hours',
+        label_whatsapp: 'WhatsApp',
+        label_phone: 'Phone',
+        label_email: 'Email',
+        label_address: 'Address',
+        address_value: 'Sharqia, 10th of Ramadan, next to the National Bank, above the Brothers Law Firm',
+        hours_day1: 'Saturday — Thursday',
+        hours_time1: '9:00 AM — 9:00 PM',
+        hours_day2: 'Friday',
+        hours_time2: '2:00 PM — 9:00 PM',
         chat_now: 'Chat With Us Now',
         chat_sub: 'Instant response on WhatsApp'
       },
