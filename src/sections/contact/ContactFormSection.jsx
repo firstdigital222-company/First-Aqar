@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FiPhone, FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import useScrollReveal from '../../hooks/useScrollReveal';
 
 const ContactFormSection = () => {
@@ -157,18 +158,85 @@ const ContactFormSection = () => {
             </div>
 
             {/* WhatsApp Quick */}
-            <a
+            <motion.a
               href="https://wa.me/201234567890?text=Hello"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 p-[20px_24px] bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-[20px] text-white no-underline font-main shadow-[0_8px_30px_rgba(37,211,102,0.3)] transition-all duration-300 hover:scale-[1.02]"
+              className="relative flex items-center justify-center gap-3 p-[18px_28px] bg-gradient-to-br from-[#25D366] via-[#128C7E] to-[#075E54] rounded-[16px] text-white no-underline font-main overflow-hidden"
+              initial={{ scale: 0.9, y: 20, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              whileHover={{ 
+                scale: 1.03,
+                y: -2,
+                boxShadow: '0 20px 50px rgba(37,211,102,0.4)',
+              }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
             >
-              <FaWhatsapp size={24} />
-              <div>
-                <div className="font-bold text-[0.95rem]">{t('contact.chat_now')}</div>
-                <div className="text-[0.78rem] opacity-85">{t('contact.chat_sub')}</div>
+              {/* Animated background gradient */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                animate={{ x: ['-100%', '100%'] }}
+                transition={{ 
+                  duration: 2.5, 
+                  repeat: Infinity, 
+                  repeatDelay: 1,
+                  ease: 'linear'
+                }}
+              />
+              
+              {/* Pulsing ring effect */}
+              <motion.div
+                className="absolute inset-0 rounded-[16px] border-2 border-white/30"
+                animate={{ 
+                  scale: [1, 1.1, 1],
+                  opacity: [0.5, 0, 0.5],
+                }}
+                transition={{ 
+                  duration: 2, 
+                  repeat: Infinity,
+                  ease: 'easeInOut'
+                }}
+              />
+              
+              <div className="relative flex items-center gap-3">
+                <motion.div
+                  animate={{ 
+                    rotate: [0, -15, 15, -15, 0],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ 
+                    duration: 2, 
+                    repeat: Infinity, 
+                    repeatDelay: 2.5,
+                    ease: 'easeInOut'
+                  }}
+                >
+                  <FaWhatsapp size={26} />
+                </motion.div>
+                
+                <div className="flex flex-col">
+                  <motion.span 
+                    className="font-bold text-[1rem] leading-tight text-white"
+                    whileHover={{ letterSpacing: '0.5px' }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {t('contact.chat_now')}
+                  </motion.span>
+                  <motion.span 
+                    className="text-[0.75rem] opacity-90 font-medium text-white"
+                    animate={{ opacity: [0.9, 1, 0.9] }}
+                    transition={{ 
+                      duration: 2, 
+                      repeat: Infinity,
+                      ease: 'easeInOut'
+                    }}
+                  >
+                    {t('contact.chat_sub')}
+                  </motion.span>
+                </div>
               </div>
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

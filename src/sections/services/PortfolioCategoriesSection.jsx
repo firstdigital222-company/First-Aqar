@@ -48,7 +48,7 @@ const PortfolioCategoriesSection = () => {
       <div className="container">
         {/* Header */}
         <div className="section-header reveal">
-          <span className="section-badge">{t('services.cat_badge')}</span>
+          <span className="inline-flex items-center gap-2 bg-primary/40 text-black font-semibold px-[18px] py-[6px] rounded-[50px] mb-4 tracking-[0.5px]">{t('services.cat_badge')}</span>
           <h2 className="section-title">
             {t('services.cat_title').split(' ')[0]} <span className="highlight">{t('services.cat_title').substring(t('services.cat_title').indexOf(' '))}</span>
           </h2>

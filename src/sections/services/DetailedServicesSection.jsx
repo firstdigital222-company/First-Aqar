@@ -26,7 +26,7 @@ const DetailedServicesSection = () => {
         isEn ? 'Gypsum ceilings and lighting' : 'أسقف جبسية وإضاءة',
         isEn ? 'Full supervision until handover' : 'إشراف كامل حتى التسليم',
       ],
-      color: '#2ECC71',
+      color: '#0bf56d',
       image: '/hero1.png',
       reverse: false,
     },
@@ -46,7 +46,7 @@ const DetailedServicesSection = () => {
         isEn ? 'Built-in cabinets design' : 'تصميم الخزائن المدمجة',
         isEn ? 'Full execution follow-up' : 'متابعة التنفيذ كاملة',
       ],
-      color: '#C9A227',
+      color: '#7d4d90',
       image: '/hero3.png',
       reverse: true,
     },
@@ -66,7 +66,7 @@ const DetailedServicesSection = () => {
         isEn ? 'Outdoor sitting areas' : 'مناطق جلوس خارجية',
         isEn ? 'Fountains and outdoor features' : 'نوافير وعناصر مائية',
       ],
-      color: '#3DD68C',
+      color: '#9b7b36',
       image: '/hero2.png',
       reverse: false,
     },
@@ -86,7 +86,7 @@ const DetailedServicesSection = () => {
         isEn ? 'Electrical and plumbing layouts' : 'مخططات كهرباء وسباكة',
         isEn ? 'Full detailed technical contract' : 'تفصيل كامل للعقد التنفيذي',
       ],
-      color: '#C9A227',
+      color: '#3498DB',
       image: '/hero3.png',
       reverse: true,
     },
@@ -115,15 +115,15 @@ const DetailedServicesSection = () => {
               <div className={`reveal-${service.reverse ? 'left' : 'right'} ${service.reverse ? 'order-1' : 'order-0'}`}>
                 <div className="relative rounded-[24px] overflow-hidden border shadow-[0_20px_60px_rgba(0,0,0,0.1)]" style={{ borderColor: service.color + '30' }}>
                   <img src={service.image} alt={service.title} className="w-full h-[380px] object-cover block" />
-                  <div className="absolute bottom-5 right-5 w-[60px] h-[60px] rounded-[16px] border backdrop-blur-[10px] flex items-center justify-center" style={{ background: service.color + '22', borderColor: service.color + '40' }}>
+                  {/* <div className="absolute bottom-5 right-5 w-[60px] h-[60px] rounded-[16px] border backdrop-blur-[10px] flex items-center justify-center" style={{ background: service.color + '22', borderColor: service.color + '40' }}>
                     <span className="text-[1.8rem]">{service.icon}</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
               {/* Content */}
               <div className={`reveal-${service.reverse ? 'right' : 'left'} ${service.reverse ? 'order-0' : 'order-1'}`}>
-                <span className="inline-flex items-center gap-2 px-4.5 py-1.5 rounded-[50px] text-[0.85rem] font-bold border mb-4" style={{ color: service.color, borderColor: service.color + '40', backgroundColor: service.color + '12' }}>
+                <span className="inline-flex items-center gap-2 px-4.5 py-1.5 rounded-[50px] text-[0.85rem] font-bold border mb-4" style={{ color: service.id === 'finishing' ? '#000' : (service.id === 'interior' || service.id === 'exterior' || service.id === 'design3d') ? '#fff' : service.color, borderColor: service.color + '40', backgroundColor: (service.id === 'interior' || service.id === 'exterior' || service.id === 'design3d') ? service.color : service.color + '12' }}>
                   {service.icon} {service.title}
                 </span>
                 <h2 className="text-[clamp(1.4rem,3vw,2rem)] font-extrabold text-text-main leading-[1.3] mb-4">{service.subtitle}</h2>
