@@ -45,7 +45,7 @@ const PortfolioDesigns3D2DSection = () => {
       area: '140m²',
       locationAr: 'القاهرة الجديدة — التجمع الخامس',
       locationEn: 'New Cairo — 5th Settlement',
-      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254236/WhatsApp_Image_2026-08-19_at_3.10.27_PM_1.jpg',
       descriptionAr: 'تصميم ثلاثي الأبعاد دقيق لتوزيع الإضاءات والبانوهات الجدارية والأرضيات الرخامية مع اختيار دقيق لدرجات الألوان الملكية المتناسقة.',
       descriptionEn: 'Ultra-realistic 3D render illustrating wall moldings, marble flooring layouts, chandelier positions, and regal balanced palettes.',
       specsAr: ['بانوهات جدارية مذهبة', 'توزيع إضاءة ذكي', 'رخام كرارة أبيض', 'فرش مخصص'],
@@ -295,7 +295,7 @@ const PortfolioDesigns3D2DSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Main 2-Column Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          
+
           {/* Column 1: Title, Description, Filters & Features */}
           <div className="lg:col-span-6 reveal space-y-6">
             {/* Badge */}
@@ -338,16 +338,14 @@ const PortfolioDesigns3D2DSection = () => {
                     <button
                       key={filter.id}
                       onClick={() => setActiveFilter(filter.id)}
-                      className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer flex items-center gap-1.5 ${
-                        isActive
-                          ? 'bg-gradient-to-r from-[var(--gold)] to-amber-600 text-white shadow-md shadow-amber-600/20 scale-105'
-                          : 'bg-[var(--bg-card)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--gold)]/50 hover:bg-[var(--bg-card2)]'
-                      }`}
+                      className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer flex items-center gap-1.5 ${isActive
+                        ? 'bg-gradient-to-r from-[var(--gold)] to-amber-600 text-white shadow-md shadow-amber-600/20 scale-105'
+                        : 'bg-[var(--bg-card)] text-[var(--text-muted)] border border-[var(--border)] hover:border-[var(--gold)]/50 hover:bg-[var(--bg-card2)]'
+                        }`}
                     >
                       <span>{isEn ? filter.labelEn : filter.labelAr}</span>
-                      <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${
-                        isActive ? 'bg-black/25 text-white' : 'bg-black/5 text-[var(--text-dim)]'
-                      }`}>
+                      <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${isActive ? 'bg-black/25 text-white' : 'bg-black/5 text-[var(--text-dim)]'
+                        }`}>
                         {count}
                       </span>
                     </button>
@@ -602,11 +600,10 @@ const PortfolioDesigns3D2DSection = () => {
                 <button
                   key={thumb.id}
                   onClick={() => setLightboxIndex(idx)}
-                  className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 transition-all duration-300 cursor-pointer ${
-                    lightboxIndex === idx
-                      ? 'ring-2 ring-amber-400 scale-105 opacity-100 shadow-md'
-                      : 'opacity-40 hover:opacity-80'
-                  }`}
+                  className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 transition-all duration-300 cursor-pointer ${lightboxIndex === idx
+                    ? 'ring-2 ring-amber-400 scale-105 opacity-100 shadow-md'
+                    : 'opacity-40 hover:opacity-80'
+                    }`}
                 >
                   <img
                     src={thumb.image}
