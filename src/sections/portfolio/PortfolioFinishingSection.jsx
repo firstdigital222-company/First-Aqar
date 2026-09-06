@@ -46,7 +46,7 @@ const PortfolioFinishingSection = () => {
       area: '480m²',
       locationAr: 'القاهرة الجديدة — التجمع الخامس',
       locationEn: 'New Cairo — 5th Settlement',
-      image: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691946/WhatsApp_Image_2026-06-21_at_11.06.47_AM_1.jpg',
       descriptionAr: 'تم تنفيذ التشطيب بالكامل بنظام تسليم المفتاح، وشمل أرضيات رخام ستاتوريو إيطالي، دهانات جوتن فينوماستيك، أسقف جبسوم بورد مع بيت نور مغناطيسي، وتكييف مركزي متكامل.',
       descriptionEn: 'Full turnkey execution featuring Italian Statuario marble floors, Jotun Fenomastic coatings, acoustic gypsum ceilings with magnetic profile lighting, and concealed central HVAC.',
       featuresAr: ['رخام ستاتوريو إيطالي', 'تكييف كونسيلد مخفي', 'سمارت هوم KNX', 'دهانات جوتن الأصلية'],
@@ -64,7 +64,7 @@ const PortfolioFinishingSection = () => {
       area: '130m²',
       locationAr: 'الشيخ زايد — سوديك',
       locationEn: 'Sheikh Zayed — SODIC',
-      image: 'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691942/WhatsApp_Image_2026-06-21_at_11.07.52_AM_2.jpg',
       descriptionAr: 'تنفيذ تجاليد خشبية فاخرة بديل الخشب وبديل الرخام، مع تظبيط مناسيب الأسقف وتركيب إضاءات سبوت لايت ليد موفرة للطاقة ولمسات ديكورية ذهبية.',
       descriptionEn: 'Premium wood slat paneling, engineered marble composite accents, leveled dropped ceilings with anti-glare architectural spotlights.',
       featuresAr: ['بديل خشب ورخام UV', 'إضاءات ضد التوهج', 'بانوهات كلاسيك', 'سيراميك كليوباترا فرز أول'],
@@ -82,7 +82,7 @@ const PortfolioFinishingSection = () => {
       area: '28m²',
       locationAr: 'القاهرة — المعادي السرايات',
       locationEn: 'Cairo — Maadi Sarayat',
-      image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691939/WhatsApp_Image_2026-06-21_at_11.07.53_AM.jpg',
       descriptionAr: 'تفصيل وتركيب وحدات مطبخ بولي لاك عالي اللمعان مقاوم للحرارة والرطوبة، مع مفصلات بلوم النمساوية الأصلية بسوفت كلوز ومسطح كوارتز نانو.',
       descriptionEn: 'High-gloss heat and humidity-proof Poly-Lac cabinetry, genuine Austrian Blum soft-close mechanisms, and nano-engineered quartz countertops.',
       featuresAr: ['مفصلات بلوم سوفت كلوز', 'كوارتز مضاد للبقع', 'إضاءة سينسور ذكية', 'توزيع صحي معتمد'],
@@ -100,7 +100,7 @@ const PortfolioFinishingSection = () => {
       area: '16m²',
       locationAr: 'مدينة نصر — مكرم عبيد',
       locationEn: 'Nasr City — Makram Ebeid',
-      image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691938/WhatsApp_Image_2026-06-21_at_11.07.53_AM_2.jpg',
       descriptionAr: 'عزل مائي ألماني مزدوج مع اختبار 72 ساعة، كبائن شاور زجاج 10مم سيكوريت معالج، وخلاطات جروهي ألمانية مدفونة بالحائط.',
       descriptionEn: 'Double German elastomeric waterproofing tested for 72 hours, 10mm tempered safety glass shower enclosure, and concealed Grohe brassware.',
       featuresAr: ['عزل مائي معتمد 100%', 'خلاطات جروهي ألماني مدفونة', 'حوض رخام تفصيل', 'مرايا ليد تاتش مضادة للبخار'],
@@ -118,7 +118,7 @@ const PortfolioFinishingSection = () => {
       area: '320m²',
       locationAr: 'القاهرة — مدينة نصر',
       locationEn: 'Cairo — Nasr City',
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691933/WhatsApp_Image_2026-06-21_at_11.07.52_AM_3.jpg',
       descriptionAr: 'تنفيذ أعمال العزل الصوتي، شبكات الإطفاء والسلامة المعتمدة، الأرضيات الإيبوكسية والبورسلين عالي التحمل، والديكورات المعدنية الذهبية.',
       descriptionEn: 'Acoustic treatment, civil defense approved fire suppression network, heavy-duty commercial porcelain and bespoke gold-coated brass trim.',
       featuresAr: ['عزل صوتي متطور', 'شبكة إطفاء حريق معتمدة', 'أرضيات شديدة التحمل', 'ديكورات حديد مشغول وذهب'],
@@ -136,7 +136,7 @@ const PortfolioFinishingSection = () => {
       area: '450m²',
       locationAr: 'العاشر من رمضان — بجوار البنك الأهلي',
       locationEn: '10th of Ramadan — Next to NBE',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691931/WhatsApp_Image_2026-06-21_at_11.06.14_AM_2.jpg',
       descriptionAr: 'قواطع زجاجية سيكوريت عازلة للصوت، أسقف بلاطات جبسية معلقة 60x60 مع توزيع إضاءة مريحة للعين، وأرضيات موكيت مكتبي تركي مقاوم للحريق.',
       descriptionEn: 'Acoustic glass partitions, 60x60 dropped acoustic grid tiles with eye-friendly flicker-free LED panels, and fire-retardant heavy-traffic modular carpet.',
       featuresAr: ['قواطع زجاج سيكوريت عازل', 'شبكات داتا وكاميرات', 'موكيت مكتبي مقاوم للحريق', 'تكييف مركزي متوازن'],
@@ -144,21 +144,21 @@ const PortfolioFinishingSection = () => {
     },
     {
       id: 'f7',
-      titleAr: 'تشطيب غرفة نوم رئيسية ماستر بأرضيات باركيه طبيعي وإضاءات خافتة',
-      titleEn: 'Master Bedroom Suite with Natural Parquet Flooring & Ambient LEDs',
-      category: 'apartments',
+      titleAr: 'تشطيب وتنسيق تراس خارجي وجلسة روف خشبية — المعادي',
+      titleEn: 'Outdoor Roof Terrace & Balcony Lounge Fit-out — Maadi',
+      category: 'villas',
       levelAr: 'ألترا سوبر لوكس',
       levelEn: 'Ultra Super Lux',
       durationAr: 'مدة التنفيذ: 30 يوم',
       durationEn: 'Duration: 30 Days',
-      area: '42m²',
-      locationAr: 'القاهرة الجديدة — الياسمين',
-      locationEn: 'New Cairo — Al Yasmin',
-      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=85',
-      descriptionAr: 'تنفيذ بانوهات جدارية ناعمة بدهانات قطيفة مهدئة للأعصاب، أرضيات باركيه HDF ألماني عالي المقاومة، وستائر كهربائية مدمجة بالجبسوم بورد.',
-      descriptionEn: 'Subtle wall mouldings in velvety calming hues, German AC5 heavy-traffic HDF parquet, and motorized ceiling-recessed drapery tracks.',
-      featuresAr: ['باركيه HDF ألماني AC5', 'ستائر سمارت مدمجة بالجبس', 'عزل صوتي للأبواب', 'دهانات صحية مضادة للبكتيريا'],
-      featuresEn: ['German HDF Parquet AC5', 'Smart Recessed Curtain Tracks', 'Acoustic Door Seals', 'Anti-Bacterial Eco Paints'],
+      area: '45m²',
+      locationAr: 'القاهرة — المعادي',
+      locationEn: 'Cairo — Maadi',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254248/WhatsApp_Image_2026-06-07_at_12.08.22_PM_4.jpg',
+      descriptionAr: 'تنفيذ أرضيات وتكسيات خشبية مقاومة للعوامل الجوية مع جلسات مريحة وتنسيق نباتي وإضاءات ليلية هادئة للتراس الخارجي.',
+      descriptionEn: 'Weatherproof wood composite decking, cozy outdoor seating lounge, natural landscape planters, and ambient evening illumination.',
+      featuresAr: ['تكسيات خشبية معالجة', 'نباتات طبيعية وتنسيق', 'عزل مائي للتراس', 'إضاءات حدائق ليد'],
+      featuresEn: ['Treated Wood Decking', 'Natural Biophilic Setup', 'Waterproof Membrane', 'Garden LED Lighting'],
     },
     {
       id: 'f8',
@@ -172,7 +172,7 @@ const PortfolioFinishingSection = () => {
       area: '210m²',
       locationAr: 'الشيخ زايد — رويال سيتي',
       locationEn: 'Sheikh Zayed — Royal City',
-      image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254242/WhatsApp_Image_2026-06-07_at_12.08.23_PM.jpg',
       descriptionAr: 'نحت يدوي دقيق للزخارف الكلاسيكية والكرانيش والقباب، مع ووترجيت رخامي مخصص لمركز البهو ودرابزين حديد فيرفورجيه مطلي بماء الذهب.',
       descriptionEn: 'Hand-carved classical gypsum mouldings, customized center waterjet marble rosette medallion, and hand-forged wrought iron staircase with gold leaf.',
       featuresAr: ['ووترجيت رخام تفصيل', 'كرانيش جبس فرنسي يدوي', 'حديد مشغول بماء الذهب', 'إنارة ثريات كريستال'],
@@ -190,7 +190,7 @@ const PortfolioFinishingSection = () => {
       area: '160m²',
       locationAr: 'القاهرة الجديدة — النرجس',
       locationEn: 'New Cairo — Al Narges',
-      image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254239/WhatsApp_Image_2026-08-19_at_3.10.28_PM_1.jpg',
       descriptionAr: 'ألواح جبسوم بورد كناوف أصلية مقاومة للحريق والرطوبة، مع مسارات ماجنتيك تراك تتيح تحريك وتغيير الإضاءات بحرية تامة.',
       descriptionEn: 'Genuine Knauf moisture and fire-rated gypsum board with recessed magnetic track rails allowing full freedom of spotlight repositioning.',
       featuresAr: ['جبسوم بورد كناوف الأصلي', 'مسارات ماجنتيك قابلة للتعديل', 'شريط ليد كوف لايت 24V', 'معالجة فواصل فايبر جلاس'],
@@ -208,7 +208,7 @@ const PortfolioFinishingSection = () => {
       area: '220m²',
       locationAr: 'العاشر من رمضان — المجاورة 33',
       locationEn: '10th of Ramadan — District 33',
-      image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1400&q=85',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254231/WhatsApp_Image_2026-06-07_at_12.08.22_PM_3.jpg',
       descriptionAr: 'تأسيس كهرباء السويدي معتمد، سباكة الشريف وضمان 10 سنوات، أرضيات بورسلين 120x60 ليزر كت، ودهانات ناعمة متناسقة.',
       descriptionEn: 'Certified El-Sewedy copper wiring, El-Sherif PPR piping with 10-year warranty, 120x60 rectified laser-cut porcelain, and sleek palette.',
       featuresAr: ['أسلاك كهرباء السويدي معتمدة', 'سباكة بضمان 10 سنوات', 'بورسلين ليزر كت 120x60', 'أبواب خشب موسكي وقشرة أرو'],
@@ -216,39 +216,39 @@ const PortfolioFinishingSection = () => {
     },
     {
       id: 'f11',
-      titleAr: 'تجهيز صالة استقبال وضيافة VIP لمركز طبي ومختبرات تخصصية',
-      titleEn: 'VIP Reception & Patient Lounge Fit-out for Specialized Medical Center',
-      category: 'commercial',
-      levelAr: 'طبي معتمد',
-      levelEn: 'Medical Grade Clean',
+      titleAr: 'تشطيب غرفة نوم رئيسية مع دريسنج وركن مكتب مدمج',
+      titleEn: 'Master Bedroom Suite with Integrated Dressing & Study Desk',
+      category: 'apartments',
+      levelAr: 'ألترا سوبر لوكس',
+      levelEn: 'Ultra Super Lux',
       durationAr: 'مدة التنفيذ: 35 يوم',
       durationEn: 'Duration: 35 Days',
-      area: '180m²',
-      locationAr: 'حلوان — القاهرة',
-      locationEn: 'Helwan — Cairo',
-      image: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1400&q=85',
-      descriptionAr: 'دهانات طبية مضادة للبكتيريا وسهلة التعقيم، أرضيات فينيل طبي هوموجينوس بدون فواصل، وكاونتر استقبال رخامي مضيء.',
-      descriptionEn: 'Anti-bacterial wipeable clinical wall coatings, seamless homogeneous medical vinyl flooring, and backlit translucent reception desk.',
-      featuresAr: ['فينيل طبي مقاوم للبكتيريا', 'دهانات طبية قابلة للغسيل', 'تكييف هيبا فلتر طبي', 'كاونتر رخام مضيء'],
-      featuresEn: ['Anti-Bacterial Homogeneous Vinyl', 'Sterilizable Washable Coatings', 'HEPA-Filtered Ventilation', 'Backlit Translucent Reception'],
+      area: '38m²',
+      locationAr: 'القاهرة الجديدة — التجمع',
+      locationEn: 'New Cairo — 5th Settlement',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254224/WhatsApp_Image_2026-06-03_at_11.24.19_AM.jpg',
+      descriptionAr: 'تفصيل دواليب ملابس وخزائن مدمجة مع ركن مكتب مريح، وإضاءات ليد داخلية سينسور تعمل بالحركة.',
+      descriptionEn: 'Custom built-in wardrobes, integrated workspace desk, and automated sensor LED illumination.',
+      featuresAr: ['دواليب بولي لاك مطفية', 'مكتب عمل مدمج', 'إضاءات سينسور ذكية', 'أرضيات HDF ألماني'],
+      featuresEn: ['Matte Poly-Lac Wardrobes', 'Built-in Study Desk', 'Smart Sensor LEDs', 'German HDF Parquet'],
     },
     {
       id: 'f12',
-      titleAr: 'تشطيب فيلا توين هاوس مع تنسيق تراس خارجي وجلسة برمجولا',
-      titleEn: 'Twin-House Villa Finishing with Outdoor Pergola Patio & Decking',
-      category: 'villas',
+      titleAr: 'تجهيز وتشطيب صالة رياضية منزلية متكاملة (Home Gym)',
+      titleEn: 'Home Gym & Personal Fitness Studio Fit-out',
+      category: 'apartments',
       levelAr: 'سوبر لوكس VIP',
       levelEn: 'Super Lux VIP',
-      durationAr: 'مدة التنفيذ: 55 يوم',
-      durationEn: 'Duration: 55 Days',
-      area: '310m²',
-      locationAr: 'القاهرة الجديدة — زيزينيا',
-      locationEn: 'New Cairo — Zizinia',
-      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=85',
-      descriptionAr: 'تشطيب داخلي متكامل مع تنفيذ أرضيات خشب WPC خارجية للتراس المقاوم للشمس والأمطار، وبرمجولا خشبية مودرن بإضاءات ليد.',
-      descriptionEn: 'Comprehensive interior finishing combined with outdoor weather-resistant WPC composite decking and modern pergola with integrated lights.',
-      featuresAr: ['أرضيات WPC ضد العوامل الجوية', 'برمجولا خشبية مودرن', 'تأسيس كامل للسباكة والكهرباء', 'تسليم على المفتاح'],
-      featuresEn: ['Weatherproof WPC Decking', 'Modern Illuminated Pergola', 'Complete MEP Execution', 'Turnkey Handover'],
+      durationAr: 'مدة التنفيذ: 25 يوم',
+      durationEn: 'Duration: 25 Days',
+      area: '35m²',
+      locationAr: 'الشيخ زايد',
+      locationEn: 'Sheikh Zayed',
+      image: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788254187/WhatsApp_Image_2026-08-19_at_3.10.29_PM.jpg',
+      descriptionAr: 'أرضيات مطاطية رابر عازلة للصوت وماصة للصدمات، مع إضاءات بروفايل ليد موجهة ومرايا جدارية كاملة عاكسة.',
+      descriptionEn: 'Shock-absorbing acoustic rubber gym flooring, directed architectural profile LEDs, and wall-to-wall safety mirrors.',
+      featuresAr: ['أرضيات رابر ماصة للصدمات', 'مرايا حائط كاملة سيكوريت', 'مسارات إضاءة بروفايل ليد', 'عزل صوتي متكامل'],
+      featuresEn: ['Shock-Absorbing Rubber', 'Securit Wall Mirrors', 'Profile Track LEDs', 'Acoustic Wall Treatment'],
     },
   ];
 
@@ -296,7 +296,7 @@ const PortfolioFinishingSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Reversed 2-Column Grid Layout: Photos on the left, Text & Filters on the right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          
+
           {/* Column 1 (Visuals / 4 Square Grid Photos on the Left in RTL) */}
           <div className="lg:col-span-6 order-2 lg:order-1 reveal delay-1">
             <div className="grid grid-cols-2 gap-3.5 sm:gap-4 p-3 sm:p-4 bg-[var(--bg-card)] border border-[var(--border)] rounded-3xl shadow-xl shadow-slate-900/5">
@@ -414,16 +414,14 @@ const PortfolioFinishingSection = () => {
                     <button
                       key={filter.id}
                       onClick={() => setActiveFilter(filter.id)}
-                      className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer flex items-center gap-1.5 ${
-                        isActive
-                          ? 'bg-gradient-to-r from-teal-600 to-[var(--primary)] text-white shadow-md shadow-teal-700/20 scale-105'
-                          : 'bg-[var(--bg-card)] text-[var(--text-muted)] border border-[var(--border)] hover:border-teal-500/50 hover:bg-[var(--bg)]'
-                      }`}
+                      className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 cursor-pointer flex items-center gap-1.5 ${isActive
+                        ? 'bg-gradient-to-r from-teal-600 to-[var(--primary)] text-white shadow-md shadow-teal-700/20 scale-105'
+                        : 'bg-[var(--bg-card)] text-[var(--text-muted)] border border-[var(--border)] hover:border-teal-500/50 hover:bg-[var(--bg)]'
+                        }`}
                     >
                       <span>{isEn ? filter.labelEn : filter.labelAr}</span>
-                      <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${
-                        isActive ? 'bg-black/25 text-white' : 'bg-black/5 text-[var(--text-dim)]'
-                      }`}>
+                      <span className={`text-[10px] px-1.5 py-0.2 rounded-md ${isActive ? 'bg-black/25 text-white' : 'bg-black/5 text-[var(--text-dim)]'
+                        }`}>
                         {count}
                       </span>
                     </button>
@@ -605,11 +603,10 @@ const PortfolioFinishingSection = () => {
                 <button
                   key={thumb.id}
                   onClick={() => setLightboxIndex(idx)}
-                  className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 transition-all duration-300 cursor-pointer ${
-                    lightboxIndex === idx
-                      ? 'ring-2 ring-teal-400 scale-105 opacity-100 shadow-md'
-                      : 'opacity-40 hover:opacity-80'
-                  }`}
+                  className={`relative w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden shrink-0 transition-all duration-300 cursor-pointer ${lightboxIndex === idx
+                    ? 'ring-2 ring-teal-400 scale-105 opacity-100 shadow-md'
+                    : 'opacity-40 hover:opacity-80'
+                    }`}
                 >
                   <img
                     src={thumb.image}

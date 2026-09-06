@@ -34,7 +34,7 @@ const OurProjectsShowcaseSection = () => {
       scopeAr: 'تصميم 3D + مخططات 2D',
       scopeEn: '3D Design + 2D Blueprints',
       category: 'chalet',
-      coverImage: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=85',
+      coverImage: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691958/WhatsApp_Image_2026-06-21_at_11.07.50_AM_5.jpg',
       highlightsAr: [
         'تراس روف مفتوح مع مسبح إنفينيتي خاص',
         'صالون ومجلس عربي بروح مودرن معاصرة',
@@ -55,7 +55,7 @@ const OurProjectsShowcaseSection = () => {
       ],
       images: [
         {
-          url: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691959/WhatsApp_Image_2026-06-21_at_11.07.50_AM_4.jpg',
           titleAr: 'إطلالة التراس الخارجي والمسبح الخاص بالدور الثاني',
           titleEn: '2nd Floor Rooftop Terrace & Infinity Pool View',
           tag: 'terrace',
@@ -63,7 +63,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Terrace & Pool',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691956/WhatsApp_Image_2026-06-21_at_11.07.04_AM_1.jpg',
           titleAr: 'الصالون والمجلس الرئيسي المفتوح مع زجاج بانورامي',
           titleEn: 'Main Open Lounge & Majlis with Panoramic Glass',
           tag: 'reception',
@@ -71,7 +71,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Lounge & Majlis',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691958/WhatsApp_Image_2026-06-21_at_11.07.50_AM.jpg',
           titleAr: 'منطقة المعيشة الدافئة مع تكسيات خشب طبيعي',
           titleEn: 'Warm Living Space with Natural Wood Louvers',
           tag: 'reception',
@@ -79,7 +79,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Lounge & Majlis',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691955/WhatsApp_Image_2026-06-21_at_11.07.03_AM_1.jpg',
           titleAr: 'ركن الجلسة العربية العصرية مع الإضاءة الليلية',
           titleEn: 'Modern Arabesque Corner with Night Ambient Glow',
           tag: 'reception',
@@ -87,7 +87,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Lounge & Majlis',
         },
         {
-          url: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691955/WhatsApp_Image_2026-06-21_at_11.07.50_AM_3.jpg',
           titleAr: 'جناح النوم الماستر المودرن مع إطلالة مفتوحة',
           titleEn: 'Modern Master Suite with Open Landscape View',
           tag: 'bedroom',
@@ -95,7 +95,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Master Suite',
         },
         {
-          url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691953/WhatsApp_Image_2026-06-21_at_11.07.05_AM.jpg',
           titleAr: 'حمام ماستر فندقي بتشطيبات رخامية وزجاج سيكوريت',
           titleEn: 'Hotel-Grade Master Bath with Marble & Securit Glass',
           tag: 'details',
@@ -103,7 +103,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Details & Bath',
         },
         {
-          url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691953/WhatsApp_Image_2026-06-21_at_11.07.04_AM.jpg',
           titleAr: 'المنظور الخارجي للكتلة المعمارية والواجهات',
           titleEn: 'External 3D Perspective of Architectural Masses',
           tag: 'terrace',
@@ -111,7 +111,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Terrace & Pool',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691948/WhatsApp_Image_2026-06-21_at_11.06.49_AM_1.jpg',
           titleAr: 'جلسة الاسترخاء الخارجية والتنسيق النباتي',
           titleEn: 'Outdoor Lounge & Landscape Planters',
           tag: 'terrace',
@@ -119,7 +119,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Terrace & Pool',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788691945/WhatsApp_Image_2026-06-21_at_11.06.17_AM.jpg',
           titleAr: 'مطبخ الشاليه المفتوح والأوبن بار العصري',
           titleEn: 'Open Concept Chalet Kitchen & Modern Breakfast Bar',
           tag: 'details',
@@ -248,7 +248,7 @@ const OurProjectsShowcaseSection = () => {
       scopeAr: 'تنفيذ وتشطيب كامل تسليم مفتاح',
       scopeEn: 'Full Turnkey Execution & Finishing',
       category: 'execution',
-      coverImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85',
+      coverImage: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692268/WhatsApp_Image_2026-06-20_at_5.23.49_PM.jpg',
       highlightsAr: [
         'أرضيات بورسلين ستاتوريو إيطالي فرز أول مقاس كبير',
         'أسقف جبسوم بورد مع مسارات بروفايل ليد مغناطيسي',
@@ -269,7 +269,7 @@ const OurProjectsShowcaseSection = () => {
       ],
       images: [
         {
-          url: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692257/WhatsApp_Image_2026-06-21_at_11.05.15_AM.jpg',
           titleAr: 'الريسبشن بعد انتهاء التشطيب وتنسيق الإضاءة المغناطيسية',
           titleEn: 'Completed Reception with Modern Magnetic Track Lighting',
           tag: 'reception',
@@ -277,7 +277,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Reception & Hall',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692266/WhatsApp_Image_2026-06-20_at_5.23.46_PM.jpg',
           titleAr: 'صالون الاستقبال مع تجاليد الحوائط الخشبية وبديل الرخام',
           titleEn: 'Living Salon with Fluted Wood Slats & Marble Backdrops',
           tag: 'reception',
@@ -285,7 +285,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Reception & Hall',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692265/WhatsApp_Image_2026-06-20_at_5.23.50_PM.jpg',
           titleAr: 'مطبخ بولي لاك مدمج مقاوم للمياه والحرارة مع بلوم نمساوي',
           titleEn: 'Custom Built-in Poly-Lac Kitchen with Austrian Blum Hardware',
           tag: 'kitchen',
@@ -293,7 +293,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Kitchen & Services',
         },
         {
-          url: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692265/WhatsApp_Image_2026-06-20_at_5.23.45_PM.jpg',
           titleAr: 'غرفة النوم الماستر بأرضيات باركيه HDF ألماني عازل',
           titleEn: 'Master Bedroom with German Acoustic HDF Wood Flooring',
           tag: 'bedroom',
@@ -301,7 +301,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Bedrooms',
         },
         {
-          url: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692262/WhatsApp_Image_2026-06-20_at_5.23.47_PM_1.jpg',
           titleAr: 'غرفة المعيشة وغرفة الأطفال مع ألوان جوتن فينوماستيك',
           titleEn: 'Family Room & Kids Bedroom with Jotun Fenomastic Coat',
           tag: 'bedroom',
@@ -309,7 +309,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Bedrooms',
         },
         {
-          url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692261/WhatsApp_Image_2026-06-20_at_5.23.42_PM_1.jpg',
           titleAr: 'حمام ماستر فندقي مع شاور روم زجاج سيكوريت 10مم',
           titleEn: 'Hotel Bathroom with 10mm Tempered Glass Shower Enclosure',
           tag: 'bath',
@@ -317,7 +317,7 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Bathrooms',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692258/WhatsApp_Image_2026-06-20_at_5.23.45_PM_1.jpg',
           titleAr: 'دقة تشطيب البانوهات الجدارية وكرانيش الفيوتك المضيئة',
           titleEn: 'Precision Wall Moldings & Illuminated Cornice Details',
           tag: 'reception',
@@ -325,7 +325,15 @@ const OurProjectsShowcaseSection = () => {
           tagEn: 'Reception & Hall',
         },
         {
-          url: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1400&q=85',
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692256/WhatsApp_Image_2026-06-20_at_5.23.43_PM.jpg',
+          titleAr: 'ممر الشقة والمداخل مع إضاءات سبوت لايت ليد ضد التوهج',
+          titleEn: 'Hallway & Entrance with Anti-Glare Architectural Spotlights',
+          tag: 'reception',
+          tagAr: 'الريسبشن والصالة',
+          tagEn: 'Reception & Hall',
+        },
+        {
+          url: 'https://res.cloudinary.com/hjc7d6nr/image/upload/v1788692254/WhatsApp_Image_2026-06-20_at_5.23.42_PM.jpg',
           titleAr: 'ممر الشقة والمداخل مع إضاءات سبوت لايت ليد ضد التوهج',
           titleEn: 'Hallway & Entrance with Anti-Glare Architectural Spotlights',
           tag: 'reception',
