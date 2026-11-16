@@ -22,8 +22,8 @@ const Footer = () => {
       t('services.s2_title'),
       t('services.s3_title'),
       t('services.s4_title'),
-      isEn ? 'Landscaping & Gardens' : 'لاندسكيب وحدائق',
-      isEn ? 'Project Supervision' : 'إشراف وإدارة مشاريع',
+      isEn ? 'Finishing & Interior Fit-out' : 'التشطيبات والديكور المتكامل',
+      isEn ? 'Project Supervision & Consultancy' : 'الإشراف والاستشارات الهندسية',
     ],
   };
 

@@ -78,11 +78,12 @@ const ContactFormSection = () => {
                     <label className="block text-text-muted text-[0.85rem] font-semibold mb-2">{t('contact.service')}</label>
                     <select name="service" value={formData.service} onChange={handleChange} className="w-full p-[13px_16px] bg-[#F0F9F4] border border-primary/20 rounded-xl text-text-main text-[0.9rem] font-main outline-none transition-[border-color] duration-300 ease-in-out box-border focus:border-primary appearance-none">
                       <option value="">{t('contact.service_select')}</option>
-                      <option>{t('services.s1_title')}</option>
-                      <option>{t('services.s2_title')}</option>
-                      <option>{t('services.s3_title')}</option>
-                      <option>{t('services.s4_title')}</option>
+                      <option>{t('contact.service_s1')}</option>
+                      <option>{t('contact.service_s2')}</option>
+                      <option>{t('contact.service_s3')}</option>
+                      <option>{t('contact.service_s4')}</option>
                       <option>{t('contact.service_s5')}</option>
+                      <option>{t('contact.service_s6')}</option>
                     </select>
                   </div>
                   <div>

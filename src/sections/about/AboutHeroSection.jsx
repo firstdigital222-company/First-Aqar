@@ -18,7 +18,7 @@ const AboutHeroSection = () => {
         <div className="grid grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] gap-14 items-center">
 
           {/* Left */}
-          <div className={`reveal ${isEn ? 'text-left' : 'text-right'}`}>
+          <div className={`animate-[fadeInUp_0.8s_ease] ${isEn ? 'text-left' : 'text-right'}`}>
             <span className="section-badge">{t('about_snippet.badge')}</span>
             <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-black text-white leading-[1.25] mt-4 mb-5">
               {isEn ? 'Transforming Spaces' : 'نحوّل المساحات'}

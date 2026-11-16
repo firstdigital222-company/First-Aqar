@@ -19,19 +19,19 @@ const ServicesHeroSection = () => {
 
       {/* Content */}
       <div className="container relative z-[2] pt-[120px] pb-[80px]">
-        <div className={`reveal max-w-[700px] ${isEn ? 'text-left' : 'text-right'}`}>
+        <div className={`max-w-[700px] animate-[fadeInUp_0.8s_ease] ${isEn ? 'text-left' : 'text-right'}`}>
           <span className="section-badge">{t('services.badge')}</span>
 
           <h1 className="text-[clamp(2.2rem,5vw,3.8rem)] font-black text-white leading-[1.25] mt-4 mb-5">
-            {isEn ? 'Integrated Solutions from' : 'حلول متكاملة من'}
+            {isEn ? 'Engineering & Design Solutions from' : 'حلول هندسية وتصميمية من'}
             <br />
-            <span className="gradient-text">{isEn ? 'Concept to Execution' : 'الفكرة للتنفيذ'}</span>
+            <span className="gradient-text">{isEn ? 'Concept to Handover' : 'الفكرة حتى الاعتماد والتنفيذ'}</span>
           </h1>
 
           <p className="text-white text-[1.1rem] font-light leading-[1.8] mb-8">
             {isEn
-              ? 'We provide a comprehensive range of interior and exterior design and finishing services to transform any space into an exceptional experience.'
-              : 'نقدّم طيفاً شاملاً من خدمات التصميم والتشطيب الداخلي والخارجي لتحويل كل مساحة لتجربة استثنائية'}
+              ? 'First Aqar provides specialized engineering solutions: 2D & 3D Designs, Executive Shop Drawings, Quantity Surveying (BOQ), and Integrated Structural & Architectural Designs with absolute engineering precision.'
+              : 'نقدم في فيرست عقار حزمة متكاملة من الخدمات الهندسية: تصميمات 2D و3D، شوب دروينج تفصيلي، حصر كميات ومقايسات دقيقة، وتصميمات إنشائية ومعمارية معتمدة بأعلى معايير الدقة الهندسية.'}
           </p>
 
           <div className={`flex gap-4 flex-wrap ${isEn ? 'justify-start' : 'justify-end'}`}>
